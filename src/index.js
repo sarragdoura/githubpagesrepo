@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import "antd/dist/antd.css";
 
-ReactDOM.render(
-  <App />,
+
+ReactDOM.render(<Router basename={process.env.PUBLIC_URL}>
+  <App />
+  </Router>,
   document.getElementById('root')
 );
 
